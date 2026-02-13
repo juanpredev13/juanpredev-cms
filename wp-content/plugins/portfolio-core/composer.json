@@ -1,0 +1,13 @@
+{
+	"name": "juanpredev/portfolio-core",
+	"description": "Core plugin for JuanPreDev headless WordPress portfolio.",
+	"type": "wordpress-plugin",
+	"require": {
+		"php": ">=8.2"
+	},
+	"autoload": {
+		"psr-4": {
+			"PortfolioCore\\": "src/"
+		}
+	}
+}

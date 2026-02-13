@@ -1,0 +1,46 @@
+# WordPress core
+wp-admin/
+wp-includes/
+wp-*.php
+index.php
+xmlrpc.php
+license.txt
+readme.html
+
+# wp-content (keep only the custom plugin)
+wp-content/*
+!wp-content/plugins/
+wp-content/plugins/*
+!wp-content/plugins/portfolio-core/
+
+# Ignore vendor inside the plugin (composer install regenerates it)
+wp-content/plugins/portfolio-core/vendor/
+
+# Uploads
+wp-content/uploads/
+
+# DDEV managed files
+.ddev/.ddev-docker-compose-*
+.ddev/db_snapshots/
+.ddev/.homeadditions/
+.ddev/.sshimageBuild/
+.ddev/sequelpro.spf
+.ddev/import-db/
+.ddev/import.yaml
+.ddev/.global_commands/
+.ddev/.webimageBuild/
+
+# Environment
+.env
+wp-config.php
+wp-config-local.php
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
