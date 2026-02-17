@@ -11,6 +11,8 @@ declare(strict_types=1);
 namespace PortfolioCore;
 
 use PortfolioCore\PostTypes\ProjectPostType;
+use PortfolioCore\Fields\ProjectFields;
+use PortfolioCore\Admin\ProjectMetaBox;
 use PortfolioCore\GraphQL\GraphQLConfig;
 use PortfolioCore\Security\Headless;
 
@@ -34,6 +36,8 @@ final class Plugin {
 	 */
 	private function init_modules(): void {
 		new ProjectPostType();
+		new ProjectFields();
+		new ProjectMetaBox();
 		new GraphQLConfig();
 		new Headless();
 	}
